@@ -1,0 +1,86 @@
+/* Add these styles to your inventory.css file */
+
+.tracking-dashboard {
+    padding: 16px;
+  }
+  
+  .tracking-item {
+    transition: all 0.2s ease;
+  }
+  
+  .tracking-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movement-timeline {
+    position: relative;
+  }
+  
+  .movement-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e5e7eb;
+  }
+  
+  .timeline-dot {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .search-section {
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+  
+  .status-badge {
+    font-weight: 500;
+  }
+  
+  .stats-cards .stat-card {
+    transition: all 0.2s ease;
+  }
+  
+  .stats-cards .stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #tracking-map {
+    border: 1px solid #e5e7eb;
+    background-color: #f3f4f6;
+  }
+  
+  .recent-movements .movement-item {
+    transition: background-color 0.2s ease;
+  }
+  
+  .recent-movements .movement-item:hover {
+    background-color: #f9fafb;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .dashboard-content {
+      flex-direction: column;
+    }
+  
+    .tracking-section,
+    .analytics-section {
+      width: 100%;
+    }
+  
+    .stats-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .stats-cards {
+      grid-template-columns: 1fr;
+    }
+  }
